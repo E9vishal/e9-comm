@@ -18,8 +18,7 @@ test:
   
 production:
   adapter: postgresql
-  database: my_database_production
-  username: mystore205
-  password: mystore205
+  template: template0
+  database: my_database
   pool: 5
   timeout: 5000
