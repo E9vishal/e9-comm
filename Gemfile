@@ -43,7 +43,7 @@ gem 'bootstrap-sass'
 
 
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
+#gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -68,7 +68,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
  # spree gem for shoping cart
-  gem 'spree', '~> 3.2.1'
+  gem 'spree', '~>3.2.1'
   gem 'spree_auth_devise', github: 'spree/spree_auth_devise' 
   gem 'spree_gateway', github: 'spree/spree_gateway'
   
