@@ -27,13 +27,15 @@
     <%= main_menu_tree Spree.t(:promotions), icon: "gift", sub_menu: "promotion", url: "#sidebar-promotions" %>
   </ul>
 <% end %>
-
+<% if can? :read, Spree::User.admin %>
 <ul class="nav nav-sidebar">
     <li class="sidebar-menu-item"><a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-salesforce"><span class="icon icon-gift"></span><span class="text"> salesforce</span><span class="icon icon-chevron-left pull-right"></span></a><ul id="sidebar-salesforce" class="collapse nav nav-pills nav-stacked" data-hook="admin_salesforce_sub_tabs">
   <li class="sidebar-menu-item"><a href="/salesforce_products/index">Products</a></li>
+  <li class="sidebar-menu-item"><a href ="/connections">Connection</a></li>
 </ul>
 </li>
   </ul>
+  <% end %>
 
 
 

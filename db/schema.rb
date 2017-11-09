@@ -10,7 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170923094237) do
+ActiveRecord::Schema.define(version: 20171031101443) do
+
+  create_table "connections", force: :cascade do |t|
+    t.integer  "Sequence_Number"
+    t.string   "Client_Key"
+    t.string   "Client_Secret"
+    t.string   "Portal_Id"
+    t.string   "Portal_Password"
+    t.string   "Active_Field"
+    t.string   "User_Field_String"
+    t.integer  "User_Field_Integer"
+    t.datetime "User_Field_Datetime"
+    t.string   "Transaction_Originator"
+    t.datetime "Transaction_Datetime"
+    t.string   "Transaction_IP"
+    t.string   "User_Updated"
+    t.datetime "Date_Updated"
+    t.string   "IP_Updated"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "Ecomm_instance_name"
+    t.string   "Access_Token"
+  end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -98,7 +120,7 @@ ActiveRecord::Schema.define(version: 20170923094237) do
     t.string   "risk_decision"
     t.string   "braintree_last_digits", limit: 4
     t.string   "braintree_card_type"
-    t.string         "admin_payment"
+    t.string   "admin_payment"
     t.index ["state"], name: "index_spree_braintree_checkouts_on_state"
     t.index ["transaction_id"], name: "index_spree_braintree_checkouts_on_transaction_id"
   end
@@ -362,6 +384,16 @@ ActiveRecord::Schema.define(version: 20170923094237) do
     t.index ["order_id"], name: "index_spree_payments_on_order_id"
     t.index ["payment_method_id"], name: "index_spree_payments_on_payment_method_id"
     t.index ["source_id", "source_type"], name: "index_spree_payments_on_source_id_and_source_type"
+  end
+
+  create_table "spree_permissions", force: :cascade do |t|
+    t.string   "title",                     null: false
+    t.integer  "priority",   default: 0
+    t.boolean  "visible",    default: true
+    t.boolean  "boolean",    default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["visible"], name: "index_spree_permissions_on_visible"
   end
 
   create_table "spree_preferences", force: :cascade do |t|
@@ -647,16 +679,27 @@ ActiveRecord::Schema.define(version: 20170923094237) do
     t.index ["exchange_inventory_unit_id"], name: "index_spree_return_items_on_exchange_inventory_unit_id"
   end
 
-  create_table "spree_role_users", force: :cascade do |t|
-    t.integer "role_id"
-    t.integer "user_id"
-    t.index ["role_id"], name: "index_spree_role_users_on_role_id"
-    t.index ["user_id"], name: "index_spree_role_users_on_user_id"
+  create_table "spree_roles", force: :cascade do |t|
+    t.string  "name"
+    t.boolean "editable",   default: true
+    t.boolean "is_default", default: false
+    t.index ["editable"], name: "index_spree_roles_on_editable"
+    t.index ["is_default"], name: "index_spree_roles_on_is_default"
+    t.index ["name"], name: "index_spree_roles_on_name"
   end
 
-  create_table "spree_roles", force: :cascade do |t|
-    t.string "name"
-    t.index ["name"], name: "index_spree_roles_on_name"
+  create_table "spree_roles_permissions", id: false, force: :cascade do |t|
+    t.integer "role_id",       null: false
+    t.integer "permission_id", null: false
+    t.index ["permission_id"], name: "index_spree_roles_permissions_on_permission_id"
+    t.index ["role_id"], name: "index_spree_roles_permissions_on_role_id"
+  end
+
+  create_table "spree_roles_users", force: :cascade do |t|
+    t.integer "role_id"
+    t.integer "user_id"
+    t.index ["role_id"], name: "index_spree_roles_users_on_role_id"
+    t.index ["user_id"], name: "index_spree_roles_users_on_user_id"
   end
 
   create_table "spree_shipments", force: :cascade do |t|
@@ -970,6 +1013,29 @@ ActiveRecord::Schema.define(version: 20170923094237) do
     t.index ["position"], name: "index_spree_taxons_on_position"
     t.index ["rgt"], name: "index_spree_taxons_on_rgt"
     t.index ["taxonomy_id"], name: "index_taxons_on_taxonomy_id"
+  end
+
+  create_table "spree_themes", force: :cascade do |t|
+    t.string   "name"
+    t.string   "state"
+    t.string   "template_file_file_name"
+    t.string   "template_file_content_type"
+    t.integer  "template_file_file_size"
+    t.datetime "template_file_updated_at"
+  end
+
+  create_table "spree_themes_templates", force: :cascade do |t|
+    t.string   "name"
+    t.text     "body"
+    t.string   "path"
+    t.string   "format"
+    t.string   "locale"
+    t.string   "handler"
+    t.boolean  "partial",    default: false
+    t.integer  "theme_id"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.index ["theme_id"], name: "index_spree_themes_templates_on_theme_id"
   end
 
   create_table "spree_trackers", force: :cascade do |t|

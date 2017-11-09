@@ -1,0 +1,277 @@
+
+
+
+<script>
+  Spree.translations = {"abbr_day_names":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"add":"Add","are_you_sure":"Are you sure?","are_you_sure_delete":"Are you sure you want to delete this record?","bill_address":"Bill Address","cancel":"Cancel","choose_a_customer":"Choose a customer","confirm_delete":"Confirm Deletion","currency_separator":".","cut":"Cut","date_picker":"yy/mm/dd","destroy":"Destroy","edit":"Edit","first_day":0,"find_a_taxon":"Find a Taxon","item_stock_placeholder":"Choose location","loading":"Loading","month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"more":"More","name":"Name","new_taxon":"New Taxon","next":"Next","no_results":"No results","option_type_placeholder":"Choose an option type","paste":"Paste","previous":"Previous","remove":"Remove","rename":"Rename","save":"Save","searching":"Searching","server_error":"The server returned an error","sku":"SKU","type_to_search":"Type to search","taxon_placeholder":"Add a Taxon","taxonomy_tree_error":"The requested change has not been accepted and the tree has been returned to its previous state, please try again.","tags_placeholder":"Add Tags","tracking":"Tracking","variant_placeholder":"Choose a variant","value":"Value"}
+</script>
+
+
+
+<script>
+//<![CDATA[
+  var AUTH_TOKEN = "YGEoNCS1BZrwjQZkNBUA/IrmLLMblkXBybVDBkFmkoKX89tyXLXtafB1vIrVL9IRgvKBL5b6piHS2+AP6mqtng==";
+  Spree.api_key = 'e6abc4f2acf52b519208420f6147fbb76b9a543086a79b76';
+//]]>
+</script>
+
+
+  <style type="text/css" id="vakata-stylesheet">#vakata-dragged { display:block; margin:0 0 0 0; padding:4px 4px 4px 24px; position:absolute; top:-2000px; line-height:16px; z-index:10000; } #vakata-contextmenu { display:block; visibility:hidden; left:0; top:-200px; position:absolute; margin:0; padding:0; min-width:180px; background:#ebebeb; border:1px solid silver; z-index:10000; *width:180px; } #vakata-contextmenu ul { min-width:180px; *width:180px; } #vakata-contextmenu ul, #vakata-contextmenu li { margin:0; padding:0; list-style-type:none; display:block; } #vakata-contextmenu li { line-height:20px; min-height:20px; position:relative; padding:0px; } #vakata-contextmenu li a { padding:1px 6px; line-height:17px; display:block; text-decoration:none; margin:1px 1px 0 1px; } #vakata-contextmenu li ins { float:left; width:16px; height:16px; text-decoration:none; margin-right:2px; } #vakata-contextmenu li a:hover, #vakata-contextmenu li.vakata-hover > a { background:gray; color:white; } #vakata-contextmenu li ul { display:none; position:absolute; top:-2px; left:100%; background:#ebebeb; border:1px solid gray; } #vakata-contextmenu .right { right:100%; left:auto; } #vakata-contextmenu .bottom { bottom:-1px; top:auto; } #vakata-contextmenu li.vakata-separator { min-height:0; height:1px; line-height:1px; font-size:1px; overflow:hidden; margin:0 2px; background:silver; /* border-top:1px solid #fefefe; */ padding:0; } </style><style type="text/css" id="jstree-stylesheet">.jstree ul, .jstree li { display:block; margin:0 0 0 0; padding:0 0 0 0; list-style-type:none; } .jstree li { display:block; min-height:18px; line-height:18px; white-space:nowrap; margin-left:18px; min-width:18px; } .jstree-rtl li { margin-left:0; margin-right:18px; } .jstree > ul > li { margin-left:0px; } .jstree-rtl > ul > li { margin-right:0px; } .jstree ins { display:inline-block; text-decoration:none; width:18px; height:18px; margin:0 0 0 0; padding:0; } .jstree a { display:inline-block; line-height:16px; height:16px; color:black; white-space:nowrap; text-decoration:none; padding:1px 2px; margin:0; } .jstree a:focus { outline: none; } .jstree a > ins { height:16px; width:16px; } .jstree a > .jstree-icon { margin-right:3px; } .jstree-rtl a > .jstree-icon { margin-left:3px; margin-right:0; } li.jstree-open > ul { display:block; } li.jstree-closed > ul { display:none; } #vakata-dragged ins { display:block; text-decoration:none; width:16px; height:16px; margin:0 0 0 0; padding:0; position:absolute; top:4px; left:4px;  border-radius:4px; -webkit-border-radius:4px; } #vakata-dragged .jstree-ok { background:green; } #vakata-dragged .jstree-invalid { background:red; } #jstree-marker { padding:0; margin:0; font-size:12px; overflow:hidden; height:12px; width:8px; position:absolute; top:-30px; z-index:10001; background-repeat:no-repeat; display:none; background-color:transparent; text-shadow:1px 1px 1px white; color:black; line-height:10px; } #jstree-marker-line { padding:0; margin:0; line-height:0%; font-size:1px; overflow:hidden; height:1px; width:100px; position:absolute; top:-30px; z-index:10000; background-repeat:no-repeat; display:none; background-color:#456c43;  cursor:pointer; border:1px solid #eeeeee; border-left:0; -moz-box-shadow: 0px 0px 2px #666; -webkit-box-shadow: 0px 0px 2px #666; box-shadow: 0px 0px 2px #666;  border-radius:1px; -webkit-border-radius:1px; }.jstree .jstree-real-checkbox { display:none; } .jstree-themeroller .ui-icon { overflow:visible; } .jstree-themeroller a { padding:0 2px; } .jstree-themeroller .jstree-no-icon { display:none; }.jstree .jstree-wholerow-real { position:relative; z-index:1; } .jstree .jstree-wholerow-real li { cursor:pointer; } .jstree .jstree-wholerow-real a { border-left-color:transparent !important; border-right-color:transparent !important; } .jstree .jstree-wholerow { position:relative; z-index:0; height:0; } .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li { width:100%; } .jstree .jstree-wholerow, .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li, .jstree .jstree-wholerow a { margin:0 !important; padding:0 !important; } .jstree .jstree-wholerow, .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li { background:transparent !important; }.jstree .jstree-wholerow ins, .jstree .jstree-wholerow span, .jstree .jstree-wholerow input { display:none !important; }.jstree .jstree-wholerow a, .jstree .jstree-wholerow a:hover { text-indent:-9999px; !important; width:100%; padding:0 !important; border-right-width:0px !important; border-left-width:0px !important; } .jstree .jstree-wholerow-span { position:absolute; left:0; margin:0px; padding:0; height:18px; border-width:0; padding:0; z-index:0; }</style></head>
+
+  <body class="admin">
+
+    <div id="progress">
+      <div class="alert alert-info alert-progress">
+        <div class="spinner">Loading...</div>
+        <div class="progress-message">Loading...</div>
+      </div>
+    </div>
+
+    <header class="header logged-in">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="navbar-header col-sm-3 col-md-2">
+          <a class="logo navbar-brand" href="/admin"><img id="logo" src="/assets/ecommerce-4ebeec2c2fa8750ad1c7872cbc1e99df39c4460348d62ad6308d1354593aa876.png" alt="Ecommerce"></a>
+            <span class="navbar-toggle" id="sidebar-toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </span>
+        </div>
+       <div class="col-sm-9 col-md-10">
+          <div class="navbar-right" data-hook="admin_login_navigation_bar">
+
+  <ul class="nav navbar-nav">
+    <li class="dropdown user user-menu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="glyphicon glyphicon-user"></i>
+        <span>spree@example.com <i class="caret"></i></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="user-header bg-light-blue">
+          <p>
+            spree@example.com
+          </p>
+        </li>
+          <li class="user-body">
+            <div class="col-xs-12 text-center" data-hook="store-frontend-link">
+              <a target="_blank" href="/">Go Back To Store</a>
+            </div>
+          </li>
+
+        <li class="user-footer" id="login-nav">
+          <div class="pull-left" data-hook="user-account-link">
+            <a class="btn btn-default btn-flat" href="/users/2/edit">Account</a>
+          </div>
+          <div class="pull-right" data-hook="user-logout-link">
+            <a class="btn btn-default btn-flat" href="/admin/logout">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <div id="wrapper" class="container-fluid ">
+      <div class="row">
+
+        <div class="col-sm-3 col-md-2 hidden-xs sidebar" id="main-sidebar" data-hook="admin_tabs">
+            <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item selected"><a class="icon-link with-tip action-shopping-cart" href="/admin/orders" data-original-title="" title=""><span class="icon icon-shopping-cart"></span> <span class="text">Orders</span></a></li>
+  </ul>
+
+  <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item"><a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-returns"><span class="icon icon-transfer"></span><span class="text"> Returns</span><span class="icon icon-chevron-left pull-right"></span></a><ul id="sidebar-returns" class="collapse nav nav-pills nav-stacked" data-hook="admin_returns_sub_tabs">
+  <li class="sidebar-menu-item"><a href="/admin/return_authorizations">Return Authorizations</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/customer_returns">Customer Returns</a></li>
+</ul>
+</li>
+  </ul>
+
+  <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item"><a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-product"><span class="icon icon-th-large"></span><span class="text"> Products</span><span class="icon icon-chevron-left pull-right"></span></a><ul id="sidebar-product" class="collapse nav nav-pills nav-stacked" data-hook="admin_product_sub_tabs">
+  <li class="sidebar-menu-item"><a href="/admin/products">Products</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/option_types">Option Types</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/properties">Properties</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/prototypes">Prototypes</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/taxonomies">Taxonomies</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/taxons">Taxons</a></li>
+</ul>
+</li>
+  </ul>
+
+  <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item"><a class="icon-link with-tip action-file" href="/admin/reports" data-original-title="" title=""><span class="icon icon-file"></span> <span class="text">Reports</span></a></li>
+  </ul>
+
+  <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item"><a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-promotions"><span class="icon icon-gift"></span><span class="text"> Promotions</span><span class="icon icon-chevron-left pull-right"></span></a><ul id="sidebar-promotions" class="collapse nav nav-pills nav-stacked" data-hook="admin_promotion_sub_tabs">
+  <li class="sidebar-menu-item"><a href="/admin/promotions">Promotions</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/promotion_categories">Promotion Categories</a></li>
+</ul>
+</li>
+  </ul>
+
+ <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item"><a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-salesforce"><span class="icon icon-gift"></span><span class="text"> salesforce</span><span class="icon icon-chevron-left pull-right"></span></a><ul id="sidebar-salesforce" class="collapse nav nav-pills nav-stacked" data-hook="admin_salesforce_sub_tabs">
+  <li class="sidebar-menu-item"><a href="/salesforce_products/index">Products</a></li>
+  <li class="sidebar-menu-item"><a href="/connections">Connection</a></li>
+</ul>
+</li>
+  </ul>
+
+  <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item"><a class="icon-link with-tip action-user" href="/admin/users" data-original-title="" title=""><span class="icon icon-user"></span> <span class="text">Users</span></a></li>
+  </ul>
+
+  <ul class="nav nav-sidebar">
+    <li class="sidebar-menu-item"><a data-toggle="collapse" data-parent="#sidebar" href="#sidebar-configuration"><span class="icon icon-wrench"></span><span class="text"> Configurations</span><span class="icon icon-chevron-left pull-right"></span></a><ul data-hook="admin_configurations_sidebar_menu" class="collapse nav nav-pills nav-stacked" id="sidebar-configuration">
+  <li class="sidebar-menu-item"><a href="/admin/general_settings/edit">General Settings</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/tax_categories">Tax Categories</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/tax_rates">Tax Rates</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/zones">Zones</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/countries">Countries</a></li>
+
+    <li class="sidebar-menu-item"><a href="/admin/countries/232/states">States</a></li>
+
+  <li class="sidebar-menu-item"><a href="/admin/payment_methods">Payment Methods</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/shipping_methods">Shipping Methods</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/shipping_categories">Shipping Categories</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/stock_transfers">Stock Transfers</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/stock_locations">Stock Locations</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/store_credit_categories">Store Credit Categories</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/trackers">Analytics Trackers</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/refund_reasons">Refund Reasons</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/reimbursement_types">Reimbursement Types</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/return_authorization_reasons">Return Authorization Reasons</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/roles">Roles</a></li>
+</ul>
+</li>
+</ul>
+
+  <div class="spree-version hidden-xs hidden-sm">
+    3.2.3
+  </div>
+
+          
+          
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="main-part">
+
+            <div class="content-header  page-header">
+    <div class="row">
+        <h1 class="col-sm-6">
+            Salesforce Connections
+
+        </h1>
+
+        <div class="page-actions col-sm-1" data-hook="toolbar">
+            <a class="btn btn-success" icon="add" id="admin_new_product" href="/auth/salesforce"><span class="icon icon-add"></span> Connect to Salesforce </a>
+
+        </div>
+
+        <div class="page-actions col-sm-4" data-hook="toolbar">
+            <a class="btn btn-success" icon="add" id="admin_new_product" href="/connections/new"><span class="icon icon-add"></span> New Connection</a>
+
+        </div>
+
+    </div>
+  </div>
+
+
+          <div class="row">
+            
+
+            <div class="col-sm-12" id="content" data-hook="">
+                <div class="filter-wrap row">
+    <div class="col-sm-12">
+      <div class="input-group index-filter-button">
+        <span class="input-group-btn">
+          <button class="btn btn-default js-show-index-filters" type="button">
+            <span class="icon icon-chevron-right"></span>
+            Filter
+          </button>
+        </span>
+        <form id="quick-search" action="/admin/salesforce_products" accept-charset="UTF-8" method="post"><input name="utf8" value="âœ“" type="hidden">
+          <input name="quick_search" id="quick_search" class="form-control js-quick-search" placeholder="Quick search.." type="text">
+    </form>     
+  </div>
+        <div id="table-filter" data-hook="" class="well filter-well">
+          
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+
+<table class="table" id="listing_connections">
+    <thead>
+      <tr>
+         <th><a class="sort_link asc">Sequence Number<span class="icon icon-chevron-up"></span></a>
+        <th> Ecomm Instance Name</th>
+        <th> Active Field</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @connections.each do |connection| %>
+        <tr>
+        <td><%= connection.Sequence_Number  %></td>
+        <td><%= connection.Ecomm_instance_name %></td>
+        <td><%= connection.Active_Field %></td>
+       <td class="actions actions-2 text-right">
+            <a class="btn btn-primary btn-sm icon-link with-tip action-edit no-text" data-action="edit" title=""  <%=link_to "Edit", edit_connection_path(connection) %> </a>
+            </td>
+
+        <td>
+           <a class="btn btn-danger btn-sm delete-resource icon-link with-tip action-delete no-text" data-confirm="Are you sure?" data-action="remove" title="" <%= link_to 'Delete', connection, :method => :delete%></a>
+          </td>
+
+          </tr>
+        <% end %>
+    </tbody>
+    </table>
+
+  
+
+
+<div class="row index-pagination-row">
+  <div class="col-sm-6">
+    
+  </div>
+  <div class="col-sm-6">
+    <div class="pagination-wrap">
+      <form class="js-per-page-form form-inline" accept-charset="UTF-8" method="get"><input name="utf8" value="âœ“" type="hidden">
+        <select name="per_page" id="per_page" class="form-control pull-right js-per-page-select per-page-selected-25"><option value="15">15</option>
+<option value="30">30</option>
+<option value="45">45</option>
+<option value="60">60</option></select>
+</form>      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div data-hook="admin_footer_scripts"></div>
+  
+
+<div id="jstree-marker" style="display: none;">Â»</div><div id="jstree-marker-line" style="display: none;"></div><div id="vakata-contextmenu"></div><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Previous"><span class="ui-icon ui-icon-circle-triangle-w">Previous</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">September</span>&nbsp;<span class="ui-datepicker-year">2017</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sun">Sun</span></th><th scope="col"><span title="Mon">Mon</span></th><th scope="col"><span title="Tue">Tue</span></th><th scope="col"><span title="Wed">Wed</span></th><th scope="col"><span title="Thu">Thu</span></th><th scope="col"><span title="Fri">Fri</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Sat">Sat</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">1</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">2</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">4</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">5</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">6</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">7</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">8</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">9</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">10</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">11</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">12</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">13</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">15</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">16</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">17</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">18</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">19</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">21</a></td><td class=" ui-datepicker-days-cell-over ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">22</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">23</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">29</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">30</a></td></tr></tbody></table></div></body></html>

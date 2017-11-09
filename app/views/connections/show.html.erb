@@ -1,0 +1,18 @@
+<h1> List of connection created</h1>
+
+<table class="table" id="listing_connections">
+    <thead>
+      <tr>
+         <th><a class="sort_link asc">Sequence Number<span class="icon icon-chevron-up"></span></a>
+        <th> Ecomm Instance Name</th>
+        <th> Active Field</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><%= @connection.Sequence_Number  %></td>
+        <td><%= @connection.Ecomm_instance_name %></td>
+        <td><%= @connection.Active_Field %></td>
+       
+    </tbody>
+    </table>

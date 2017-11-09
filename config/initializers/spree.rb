@@ -16,8 +16,12 @@ Spree.config do |config|
   config.logo = 'ecommerce.png'
   
   config.admin_interface_logo = 'ecommerce.png'
+  
+ 
+
 
   
 end
 
 Spree.user_class = "Spree::User"
+

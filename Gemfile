@@ -68,9 +68,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
  # spree gem for shoping cart
-  gem 'spree', '~>3.2.1'
-  gem 'spree_auth_devise', github: 'spree/spree_auth_devise' 
-  gem 'spree_gateway', github: 'spree/spree_gateway'
+ gem 'spree', github: 'spree/spree', branch: '3-2-stable'
+ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
+ gem 'spree_i18n', github: 'spree/spree_i18n', branch: 'master' 
+ gem 'spree_gateway', github: 'spree/spree_gateway'
   
   
   
@@ -82,3 +83,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'spree_braintree_vzero', github: 'spree-contrib/spree_braintree_vzero'
 gem 'spree_delivery_slots', git: 'https://github.com/vinsol-spree-contrib/spree-delivery-slots'
 gem 'spree_active_shipping', github: 'spree-contrib/spree_active_shipping'
+gem 'spree_admin_roles_and_access'
+
+gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes',branch: '3-2-stable'

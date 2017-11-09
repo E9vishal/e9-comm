@@ -1,0 +1,31 @@
+<h1> Edit Connection </h1>
+
+<%= form_for(@connection) do |f| %>
+<div class = "col-md-2">
+<%= f.label :Sequence_Number %>
+<%= f.text_field :Sequence_Number, class: 'form-control title' %>
+</div>
+
+<div class = "col-md-4">
+  <%= f.label :Ecomm_instance_name %>
+  <%= f.text_field :Ecomm_instance_name, class: 'form-control title' %>
+</div>
+
+<div class="col-md-2">
+<%= f.label :Active_Field%>
+<%= f.select :Active_Field, options_for_select([["Active"],["Non-Active"]], { class: 'select2' }) %>
+</div>
+
+  <div class = "col-md-8">
+ <div class="form-actions" data-hook="buttons">
+  <%= button Spree.t('actions.update'), 'ok', 'submit', {class: 'btn-success', data: { disable_with: "#{ Spree.t(:saving) }..." }} %>
+  <span class="or"><%= Spree.t(:or) %></span>
+  <%= button_link_to Spree.t('actions.cancel'), connections_url, icon: 'remove' %>
+</div>
+</div>
+
+
+<% end %>
+
+
+ 

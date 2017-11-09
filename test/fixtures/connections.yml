@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Sequence_Number: 1
+  Client_Key: MyString
+  Client_Secret: MyString
+  Portal_Id: 
+  Portal_Password: MyString
+  Active_Field: MyString
+  User_Field_String: MyString
+  User_Field_Integer: 1
+  User_Field_Datetime: 2017-10-13 21:10:58
+  Transaction_Originator: MyString
+  Transaction_Datetime: 2017-10-13 21:10:58
+  Transaction_IP: MyString
+  User_Updated: MyString
+  Date_Updated: 2017-10-13 21:10:58
+  IP_Updated: MyString
+
+two:
+  Sequence_Number: 1
+  Client_Key: MyString
+  Client_Secret: MyString
+  Portal_Id: 
+  Portal_Password: MyString
+  Active_Field: MyString
+  User_Field_String: MyString
+  User_Field_Integer: 1
+  User_Field_Datetime: 2017-10-13 21:10:58
+  Transaction_Originator: MyString
+  Transaction_Datetime: 2017-10-13 21:10:58
+  Transaction_IP: MyString
+  User_Updated: MyString
+  Date_Updated: 2017-10-13 21:10:58
+  IP_Updated: MyString

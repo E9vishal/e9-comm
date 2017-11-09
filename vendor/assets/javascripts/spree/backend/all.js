@@ -10,3 +10,6 @@
 
 //= require_tree .
 //= require spree/backend/spree_delivery_slots
+
+//= require spree/backend/spree_admin_roles_and_access
+//= require spree/backend/spree_themes
