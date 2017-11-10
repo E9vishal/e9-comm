@@ -85,4 +85,4 @@ gem 'spree_delivery_slots', git: 'https://github.com/vinsol-spree-contrib/spree-
 gem 'spree_active_shipping', github: 'spree-contrib/spree_active_shipping'
 gem 'spree_admin_roles_and_access'
 
-gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes',branch: '3-2-stable'
+gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: '3-2-stable'
