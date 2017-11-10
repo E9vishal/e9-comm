@@ -18,7 +18,8 @@ test:
   
 production:
   adapter: postgresql
-  template: template0
-  database: my_database
+  database: e9comm_database
+  username: e9comm
+  password: e9comm
   pool: 5
   timeout: 5000
