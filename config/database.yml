@@ -18,9 +18,8 @@ test:
   
 production:
   adapter: postgresql
-  template: template0
-  database: my_database
-  username: e9comm
-  password: e9comm
+  database: production_database
+  username: pg_database
+  password: pg_database
   pool: 5
   timeout: 5000
