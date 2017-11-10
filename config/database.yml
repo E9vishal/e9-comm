@@ -18,7 +18,8 @@ test:
   
 production:
   adapter: postgresql
-  database: e9comm_database
+  template: template0
+  database: my_database
   username: e9comm
   password: e9comm
   pool: 5
