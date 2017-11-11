@@ -1,6 +1,10 @@
 class AbilityDecorator
   include CanCan::Ability
   def initialize(user)
+    user ||= User.new # guest user (not logged in)
+    if user.admin?
+      can :manage, :all
+    end
     if user.respond_to?(:has_spree_role?) && user.has_spree_role?('users')
       can [:admin], Spree::User
     end

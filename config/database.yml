@@ -18,8 +18,8 @@ test:
   
 production:
   adapter: postgresql
-  database: production_database
-  username: pg_database
-  password: pg_database
+  database: postgres_database
+  username: admin
+  password: admin
   pool: 5
   timeout: 5000
