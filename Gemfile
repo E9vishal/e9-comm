@@ -38,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem "omniauth-salesforce"
 
+gem 'compass'
+
 gem 'restforce', '~> 2.5.3'
 
 gem 'bootstrap-sass'
