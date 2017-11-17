@@ -120,7 +120,7 @@ ActiveRecord::Schema.define(version: 20171114135718) do
     t.string   "risk_decision"
     t.string   "braintree_last_digits", limit: 4
     t.string   "braintree_card_type"
-    t.string   "admin_payment"
+    t.string        "admin_payment"
     t.index ["state"], name: "index_spree_braintree_checkouts_on_state"
     t.index ["transaction_id"], name: "index_spree_braintree_checkouts_on_transaction_id"
   end

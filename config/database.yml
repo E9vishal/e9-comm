@@ -18,8 +18,8 @@ test:
   
 production:
   adapter: postgresql
-  database: postgres_database
-  username: admin
-  password: admin
+  database: e9comm_database
+  username: e9comm
+  password: e9comm
   pool: 5
   timeout: 5000
