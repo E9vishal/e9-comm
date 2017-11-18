@@ -44,6 +44,8 @@ gem 'restforce', '~> 2.5.3'
 
 gem 'bootstrap-sass'
 
+gem 'sprockets'
+
 
 
 # Use Redis adapter to run Action Cable in production
