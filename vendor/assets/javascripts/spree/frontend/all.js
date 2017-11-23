@@ -13,3 +13,4 @@
 
 //= require spree/frontend/spree_admin_roles_and_access
 //= require spree/frontend/spree_themes
+//= require spree/frontend/spree_video

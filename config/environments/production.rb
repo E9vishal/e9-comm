@@ -16,7 +16,7 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.public_file_server.enabled = false
+  config.public_file_server.enabled = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -25,9 +25,13 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
 
+  
 
-config.serve_static_assets = true
 
+ config.serve_static_assets = true
+
+ config.assets.digest = true
+ 
 
 
 

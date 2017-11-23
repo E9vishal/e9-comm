@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/chashmeetsingh/spree_video.git
+  revision: 3b8afeef6eab32e7482cf039c2589291f9e04c27
+  branch: master
+  specs:
+    spree_video (1.0.3)
+      spree_core
+
+GIT
   remote: https://github.com/spree-contrib/spree_active_shipping.git
   revision: 4b02432d179ae9fc1023ac29647c2f9b6edac833
   specs:
@@ -529,9 +537,9 @@ DEPENDENCIES
   spree_delivery_slots!
   spree_gateway!
   spree_i18n!
+  spree_video!
   spring
   spring-watcher-listen (~> 2.0.0)
-  sprockets
   sqlite3
   turbolinks (~> 5)
   tzinfo-data

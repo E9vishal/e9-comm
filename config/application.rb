@@ -25,5 +25,7 @@ module Mystore
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.assets.initialize_on_precompile = false
+
+    config.assets.paths << Rails.root.join("app", "assets", "stylesheets")
   end
 end

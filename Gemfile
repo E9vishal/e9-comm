@@ -44,7 +44,6 @@ gem 'restforce', '~> 2.5.3'
 
 gem 'bootstrap-sass'
 
-gem 'sprockets'
 
 
 
@@ -60,6 +59,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'guard'
+  gem 'pg'
   gem 'sqlite3'
  
 
@@ -92,3 +92,5 @@ gem 'spree_active_shipping', github: 'spree-contrib/spree_active_shipping'
 gem 'spree_admin_roles_and_access'
 
 gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: '3-2-stable'
+
+gem 'spree_video', github: 'chashmeetsingh/spree_video', branch: 'master'
