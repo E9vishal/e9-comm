@@ -60,7 +60,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'guard'
   gem 'pg'
-  gem 'sqlite3'
+ 
  
 
 end
