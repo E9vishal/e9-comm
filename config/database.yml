@@ -6,17 +6,17 @@
 #
 development:
   adapter: postgresql
-  database: e9spree_development
-  username: spree
-  password: spree
+  database: e9comm_development_database
+  username: e9comm
+  password: e9comm
   pool: 5
   timeout: 5000
 
 test:
   adapter: postgresql
-  database: e9spree_test
-  username: spree
-  password: spree
+  database: e9comm_test_database
+  username: e9comm
+  password: e9comm
   pool: 5
   timeout: 5000
   
