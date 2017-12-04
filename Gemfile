@@ -48,6 +48,7 @@ gem 'bootstrap-sass'
 
 
 
+
 # Use Redis adapter to run Action Cable in production
 #gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -60,9 +61,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'guard'
-  gem 'pg'
- 
- 
+  gem 'pg' 
 
 end
 
@@ -73,6 +72,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors', '~> 2.4'
+  gem 'binding_of_caller', '~> 0.7.3'
 end
  # spree gem for shoping cart
  gem 'spree', github: 'spree/spree', branch: '3-2-stable'
@@ -94,3 +95,10 @@ gem 'spree_admin_roles_and_access'
 
 gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: '3-2-stable'
 
+gem 'spree_loyalty_points', github: 'vinsol-spree-contrib/spree-loyalty-points'
+
+gem 'spree_marketing', github: 'vinsol-spree-contrib/spree_marketing'
+
+gem 'spree_events_tracker', github: 'vinsol-spree-contrib/spree_events_tracker', branch: '3-2-stable'
+
+gem 'spree_admin_insights'
