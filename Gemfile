@@ -28,6 +28,8 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
+gem 'capistrano', '~> 3.10'
+
 
 
 # Use jquery as the JavaScript library
