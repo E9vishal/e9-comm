@@ -391,7 +391,7 @@ GEM
       activesupport (>= 3.2.0)
       cocaine (~> 0.5.5)
       mime-types
-      mimemagic (= 0.3.0)
+      mimemagic (= 0.3.10)
     paranoia (2.2.1)
       activerecord (>= 4.0, < 5.1)
     pg (0.21.0)
