@@ -50,6 +50,8 @@ gem 'unicorn'
 
 gem 'rack-timeout'
 
+gem 'mimemagic', '~> 0.3.10'
+
 
 
 # Use Redis adapter to run Action Cable in production
